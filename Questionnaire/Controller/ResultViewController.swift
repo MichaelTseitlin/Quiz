@@ -19,11 +19,12 @@ class ResultViewController: UIViewController {
     @IBOutlet var imageOfResult: UIImageView!
     @IBOutlet var imageOfStars: UIImageView!
     
+    // MARK: - UIView Controller Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         settingValues()
         
-        navigationItem.setHidesBackButton(true, animated: false)
+        navigationItem.hidesBackButton = true
         navigationItem.title = "Ваш результат"
     }
     

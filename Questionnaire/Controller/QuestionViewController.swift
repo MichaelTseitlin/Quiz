@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class QuestionViewController: UIViewController {
     
     // MARK: - Create empty variable
     private var currentQuestions: Question?
@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var answerButtons: [UIButton]!
     
+    // MARK: - UIView Controller Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.setHidesBackButton(true, animated: false)
@@ -55,7 +56,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController {
+extension QuestionViewController {
     
     // MARK: - Update text of questions, text of answers.
     private func updateTittles(_ question: Question?) {
